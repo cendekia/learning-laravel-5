@@ -7,6 +7,7 @@ class Article extends Model {
 	protected $fillable = [
 		'title',
 		'content',
+		'excerpt',
 		'published_at'
 	];
 

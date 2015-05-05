@@ -13,7 +13,5 @@
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('articles', 'ArticlesController@index');
+Route::get('articles/{id}', 'ArticlesController@show');
