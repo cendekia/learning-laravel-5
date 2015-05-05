@@ -1,8 +1,16 @@
-<html>
-	<head>
-		<title>About</title>
-	</head>
-	<body>
-		<h1>About: {{ $first }} {{ $last }}</h1>
-	</body>
-</html>
+@extends('app')
+
+@section('content')
+	<h1>About</h1>
+	@if (count($people))
+		<ul>
+		@foreach ($people as $person)
+			<li>{{ $person }}</li>
+		@endforeach
+		</ul>
+	@endif
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque temporibus commodi ad numquam recusandae consectetur odio! Commodi fuga repudiandae excepturi, ipsam numquam cumque, deleniti neque facilis quasi laudantium fugiat eius.
+	</p>
+@endsection
