@@ -10,11 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', 'WelcomeController@index');
-Route::get('/contact', 'WelcomeController@contact');
-
-Route::get('home', 'HomeController@index');
+Route::get('about', 'PagesController@about');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
