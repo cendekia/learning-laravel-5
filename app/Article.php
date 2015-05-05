@@ -8,6 +8,6 @@ class Article extends Model {
 		'title',
 		'content',
 		'published_at'
-	]
+	];
 
 }
