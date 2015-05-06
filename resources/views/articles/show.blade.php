@@ -9,4 +9,4 @@
 			{{ $article->body }}
 		</div>
 	</article>
-@endsection
+@stop

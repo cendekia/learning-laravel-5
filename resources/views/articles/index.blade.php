@@ -13,4 +13,4 @@
 			</div>
 		</article>
 	@endforeach
-@endsection
+@stop
