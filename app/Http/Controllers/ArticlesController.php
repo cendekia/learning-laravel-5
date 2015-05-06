@@ -3,8 +3,8 @@
 use App\Article;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateArticleRequest;
 
-use Request;
 use Carbon\Carbon;
 
 class ArticlesController extends Controller {
@@ -33,11 +33,9 @@ class ArticlesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(CreateArticleRequest $request)
 	{
-		$input = Request::all();
-
-		Article::create($input);
+		Article::create($request->all());
 
 		return redirect('articles');
 	}
