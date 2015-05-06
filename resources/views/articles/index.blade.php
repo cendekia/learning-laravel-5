@@ -6,7 +6,7 @@
 	@foreach ($articles as $article)
 		<article>
 			<h2>
-				<a href="{{ url('/articles', $article->id) }}">{{ $article->title }}</a>
+				<a href="{{ url('/articles', $article->id) }}">{{ $article->title }}</a> <small>| {{ $article->published_at->diffForHumans() }}</small>
 			</h2>
 			<div>
 				{{ $article->body }}
