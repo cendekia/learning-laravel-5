@@ -19,9 +19,9 @@ Route::controllers([
 	'password' => 'Auth\PasswordController'
 ]);
 
-Route::group(['prefix' => Config::get('admin.urlPrefix'), 'middleware' => 'auth'], function()
-{
+// Route::group(['prefix' => Config::get('admin.urlPrefix'), 'middleware' => 'auth'], function()
+// {
 	Route::resource('articles', 'ArticlesController');
-});
+// });
 
 
