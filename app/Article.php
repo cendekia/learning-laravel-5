@@ -34,4 +34,14 @@ class Article extends Model {
 	{
 		return $this->belongsTo('App\User');
 	}
+
+	/**
+	 * Description of this method.
+	 *
+	 * @return Response
+	 */
+	public function tags()
+	{
+		return $this->belongsToMany('App\Tag')->withTimestamps();
+	}
 }
